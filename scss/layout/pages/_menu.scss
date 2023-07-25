@@ -1,0 +1,213 @@
+// .headMenu{
+//     width: 100%;
+//     height: 50vh;
+// //     position: relative;
+// //     width: 100%;
+// //     height: 300px;
+// //     top: 0;
+//     background: url(../../../img/headers/menup.jpg);
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     z-index: -1;
+//     clip-path: circle(100vh at 50% -50vh);
+// }
+
+.sect-menu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -100px;
+    
+
+    .contMenus {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // position: absolute;
+        top: 0;
+
+
+        &:nth-child(1)  .header-content{
+            background: url(../../../img/menu/sect/bgBurg.jpg);
+            // background: rgb(18, 226, 87);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(2)  .header-content{
+            background: url(../../../img/menu/sect/bgBaguette.jpg);
+            // background: rgb(18, 226, 87);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(3)  .header-content{
+            background: url(../../../img/menu/sect/bgSandw.jpg);
+            // background: rgb(18, 226, 87);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        // background-color: rgb(71, 16, 62);
+        .header-content {
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+            /* z-index: 2; */
+    
+            position: relative;
+            width: 100%;
+            height: 350px;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: -1;
+           
+
+            
+
+            &::before {
+    
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(15, 24, 84, 0.43);
+                z-index: -1; 
+            }
+    
+    
+    
+            h2 {
+                font-family: $font-primera;
+                font-size: 9vmin;
+                color: $color-tercero;
+                letter-spacing: 1px;
+                text-align: center;
+                font-weight: 200;
+                text-transform: uppercase;
+            }
+    
+    
+        }
+    
+        .cont-menu {
+            // background-color: darkmagenta;
+            @include dFlex(center, center, row wrap);
+            width: 100%;
+    
+            .cont-prod {
+                // background-color: coral;
+    
+                @include dFlex(center, center, row nowrap);
+    
+                margin: 25px 5px;
+                width: 40%;
+                min-width: 420px;
+                max-width: 720px;
+    
+                img {
+                    // width: 250px;
+                    width: 50%;
+                    // height: 250px;
+                }
+    
+                .cont-prod-dat {
+                    // background-color: aqua;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    // @include dFlex(center, center, column nowrap);
+                    width: 40%;
+                    min-height: 220px;
+                    margin: 0 15px;
+    
+                    h3 {
+                        font-family: $font-primera;
+                        font-size: 24px;
+                        font-weight: 400;
+                        color: $color-segundo;
+                        text-align: center;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        margin: 10px 0;
+                    }
+    
+    
+    
+                    ul {
+                        @include dFlex(center, center, column nowrap);
+    
+                        li {
+                            font-family: $font-tercera;
+                            font-size: 15px;
+                            font-weight: 400;
+                            color: $color-primero;
+                            text-align: center;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                        }
+                    }
+    
+                    .cont-prod-precios {
+                        width: 100%;
+                        @include dFlex(space-around, center, row nowrap);
+                        padding: 5px 0;
+    
+                        .precios {
+                            @include dFlex(space-around, center, column nowrap);
+    
+                            h4 {
+                                font-family: $font-tercera;
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: $color-primero;
+                                text-align: center;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                margin: 5px 0;
+                            }
+    
+                            p {
+                                font-family: $font-tercera;
+                                font-size: 15px;
+                                font-weight: 400;
+                                color: $color-segundo;
+                                text-align: center;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                margin: 5px 0;
+    
+                            }
+                        }
+                    }
+    
+                }
+    
+            }
+    
+    
+        }
+    }
+}
+

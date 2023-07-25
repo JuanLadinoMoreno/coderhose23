@@ -1,0 +1,44 @@
+.sect-icons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .cont-icons {
+        /* background: #EC6809; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+
+        .card-icon {
+            /* background: chartreuse; */
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 20px;
+
+            .icon-card {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-family: $font-tercera;
+                font-size: 20px;
+                font-weight: 400;
+                color: $color-primero;
+                text-align: center;
+            
+            }
+        }
+    
+    }
+    
+}
+

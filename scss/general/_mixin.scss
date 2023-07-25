@@ -1,0 +1,33 @@
+@mixin dFlex($justify, $align, $flow) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: $flow;
+}
+
+@mixin dGrid($column, $row, $gap) {
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    gap: $gap;
+}
+
+@mixin headerP( $urls){
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    //     width: 100%;
+    //     height: 300px;
+    //     top: 0;
+    background: url($urls);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    // clip-path: circle(100vh at 50% -50vh);
+    border-radius: 0 0 50% 50%;
+}
